@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YoonCode's Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for world-renowned software engineer Yoon"
+    />
+    <meta name="author" content="Yoon" />
+    <script
+      src="https://kit.fontawesome.com/323379f2ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--fontawesome-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--font-->
+    <link rel="icon" type="image/png" href="imgs/favicon.ico" />
+    <!--favicon-->
+    <link rel="stylesheet" href="style.css" />
+    <!--css-->
+    <script src="main.js" defer></script>
+    <!--javascript(defer 옵션을 반드시 줄 것)-->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fa fa-infinity"></i>
+        <a href="#">YoonCode</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#testimonials">
+          Testimonials
+        </li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img
+          src="./imgs/profile.png"
+          alt="YoonCode's profile photo"
+          class="home__avatar"
+        />
+        <h1 class="home__title">Hello, <br />I'm YoonCode.</h1>
+        <h2 class="home__description">
+          A Software Engineer
+          <p>Crossing the boundary between the Front-ends and the Back-ends.</p>
+        </h2>
+
+        <button class="home__contact">Contact Me</button>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <div>
+        <h1>About me</h1>
+        <h3>
+          <strong>소통과 문제해결의 전문가</strong>, 3년차 프론트엔드 개발자
+          ${윤상진}입니다.
+        </h3>
+        <ul>
+          <li>
+            ✅ 한계를 정하지 않고, 성장을 위한 끊임없는 도전과 학습 과정을
+            즐깁니다.
+          </li>
+          <li>
+            ✅ 기록, 정리, 소통을 통해 효과적이고 효율적인 협업 환경을
+            구축합니다.
+          </li>
+          <li>✅ 개발자의 편의보다 사용자의 편의에 집중합니다.</li>
+        </ul>
+      </div>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa fa-html5"></i>
+          </div>
+          <h2 class="major__title">Frontend</h2>
+          <div class="major__description">
+            HTML, CSS, JavaScript, TypeScript, <br />React, TailwindCSS, Web
+            APIs
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-mobile"></i>
+          </div>
+          <h2 class="major__title">Mobile</h2>
+          <div class="major__description">Android, iOS, React-Native</div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa fa-server"></i>
+          </div>
+          <h2 class="major__title">Backend</h2>
+          <div class="major__description">JavaScript, NodeJS, Rest APIs</div>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img src="./imgs/jobs/tooti.png" alt="tooti" class="job__logo" />
+          <div class="job__description">
+            <p class="job__name">
+              Worked at Tooti as Product Manager & Front-end engineer
+            </p>
+            <p class="job__period">2021 Dec - 2023 Mar</p>
+          </div>
+        </div>
+        <div class="job">
+          <img
+            src="./imgs/jobs/mission1.png"
+            alt="mission1"
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">
+              Worked at Mission1 as Product Manager & Front-end engineer
+            </p>
+            <p class="job__period">2020 Dec - 2021 Dec</p>
+          </div>
+        </div>
+        <div class="job">
+          <img src="./imgs/jobs/gnd.png" alt="gnd" class="job__logo" />
+          <div class="job__description">
+            <p class="job__name">
+              Worked at GND as Sales Manager & Web Publisher
+            </p>
+            <p class="job__period">2019 Dec - 2020 Dec</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Tools</h2>
+        <ul>
+          <li>🔥 Experience with all phases of the software life-cycle.</li>
+          <li>🔥 Passion for learning new technologies.</li>
+          <li>
+            🔥 Capable of working within a team environment and independently.
+          </li>
+          <li>
+            🔥 Ability to plan and time schedule, work under strict time
+            pressure and adapt quickly when needed.
+          </li>
+        </ul>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 99%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>95%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Javascript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Typescript</span>
+                <span>60%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 60%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>React</span>
+                <span>85%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>NodeJS</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li>
+                  <img src="https://skillicons.dev/icons?i=git" alt="git" />
+                </li>
+                <li>
+                  <img
+                    src="https://skillicons.dev/icons?i=github"
+                    alt="github"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://skillicons.dev/icons?i=vscode"
+                    alt="vscode"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://skillicons.dev/icons?i=photoshop"
+                    alt="photoshop"
+                  />
+                </li>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=figma" alt="figma" />
+                </li>
+                <li>
+                  <img
+                    src="https://skillicons.dev/icons?i=postman"
+                    alt="postman"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li>사용자 경험 디자인</li>
+                <li>애자일 방법론</li>
+                <li>코칭 및 멘토링</li>
+                <li>내외부 커뮤니케이션</li>
+                <li>비즈니스 모델링</li>
+                <li>콘텐츠 개발</li>
+                <li>비즈니스 프로세스 개선</li>
+                <li>검색엔진 마케팅(SEM)</li>
+                <li>협업적 문제 해결</li>
+                <li>퍼실리테이터</li>
+                <li>프로세스 효율성</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+          <button class="categories__btn selected" data-filter="*">
+            All<span class="category__count">18</span>
+          </button>
+          <button class="categories__btn" data-filter="frontend_project">
+            Frontend<span class="category__count">15</span>
+          </button>
+          <button class="categories__btn" data-filter="mobile_project">
+            Mobile<span class="category__count">1</span>
+          </button>
+          <button class="categories__btn" data-filter="backend_project">
+            Backend<span class="category__count">2</span>
+          </button>
+        </div>
+
+        <div class="work__projects">
+          <!-- Frontend -->
+          <a
+            href="https://transition.kr/party/"
+            class="project"
+            target="blank"
+            data-type="frontend_project"
+          >
+            <img
+              src="./imgs/projects/transition-party.png"
+              alt="transition-party-website"
+            />
+            <div class="project__description">
+              <h3>Transition-Party-Website</h3>
+              <span>시대전환 정당 홈페이지 신규 제작</span>
+              <span>Wordpress</span>
+            </div>
+          </a>
+          <a
+            href="https://tooti.co.kr/student"
+            class="project"
+            target="blank"
+            data-type="frontend_project"
+          >
+            <img src="./imgs/projects/tooti.png" alt="tooti-platform" />
+            <div class="project__description">
+              <h3>Tooti-Platform</h3>
+              <span>투티 공식 사이트 구현</span>
+              <span>React</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/YoonCode/Github-Finder-React"
+            class="project"
+            target="blank"
+            data-type="frontend_project"
+          >
+            <img src="./imgs/projects/github-finder.png" alt="github-finder" />
+            <div class="project__description">
+              <h3>Github-Finder</h3>
+              <span>깃허브 계정 실시간 검색 서비스</span>
+              <span>React</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/YoonCode/My-momentum-vanillaJS"
+            class="project"
+            target="blank"
+            data-type="frontend_project"
+          >
+            <img src="./imgs/projects/momentum.png" alt="my-momentum" />
+            <div class="project__description">
+              <h3>My-Momentum</h3>
+              <span>크롭 브라우저 클론 코딩</span>
+              <span>Javascript</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/YoonCode/Youtube-React"
+            class="project"
+            target="blank"
+            data-type="frontend_project"
+          >
+            <img src="./imgs/projects/youtube-clone.png" alt="youtube" />
+            <div class="project__description">
+              <h3>Youtube</h3>
+              <span>유튜브 클론 반응형 웹 구현</span>
+              <span>React</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/YoonCode/Motion-TypeScript"
+            class="project"
+            target="blank"
+            data-type="frontend_project"
+          >
+            <img src="./imgs/projects/motion.png" alt="motion" />
+            <div class="project__description">
+              <h3>Motion</h3>
+              <span>노션 클론 반응형 웹 구현</span>
+              <span>TypeScript</span>
+            </div>
+          </a>
+          <a
+            href="http://cheongplant.com/"
+            class="project"
+            target="blank"
+            data-type="frontend_project"
+          >
+            <img src="./imgs/projects/cheongplant.png" alt="cheongplant" />
+            <div class="project__description">
+              <h3>청플란트-웹사이트</h3>
+              <span>치과병원 반응형 웹사이트 제작</span>
+              <span>Javascript</span>
+            </div>
+          </a>
+          <a
+            href="http://renewnnewtex.com/"
+            class="project"
+            target="blank"
+            data-type="frontend_project"
+          >
+            <img src="./imgs/projects/renewnnew.png" alt="renewnnew" />
+            <div class="project__description">
+              <h3>리뉴앤뉴-웹사이트</h3>
+              <span>원단업체 반응형 웹사이트 제작</span>
+              <span>Javascript</span>
+            </div>
+          </a>
+          <a
+            href="http://www.nongsamon.kr/shop/"
+            class="project"
+            target="blank"
+            data-type="frontend_project"
+          >
+            <img src="./imgs/projects/nongsamon.png" alt="nongsamon" />
+            <div class="project__description">
+              <h3>농사몬-쇼핑몰</h3>
+              <span>농산물업체 반응형 쇼핑몰 제작</span>
+              <span>Javascript</span>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="project"
+            target="blank"
+            data-type="frontend_project"
+          >
+            <img src="./imgs/projects/nalazoo.png" alt="nalazoo" />
+            <div class="project__description">
+              <h3>날라주케어-쇼핑몰</h3>
+              <span>반려동물업체 반응형 쇼핑몰 제작</span>
+              <span>Javascript</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/YoonCode/Todo-List-React"
+            class="project"
+            target="blank"
+            data-type="frontend_project"
+          >
+            <img src="./imgs/projects/todo-list.png" alt="todo-list" />
+            <div class="project__description">
+              <h3>Todo-List</h3>
+              <span>투두리스트 반응형 웹 구현</span>
+              <span>React</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/YoonCode/business-card-maker"
+            class="project"
+            target="blank"
+            data-type="frontend_project"
+          >
+            <img
+              src="./imgs/projects/business-card-maker.png"
+              alt="business-card-maker"
+            />
+            <div class="project__description">
+              <h3>Business-Card-Maker</h3>
+              <span>반응형 명함 웹 구현</span>
+              <span>React</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/YoonCode/Twitter-Clone-Client-React"
+            class="project"
+            target="blank"
+            data-type="frontend_project"
+          >
+            <img src="./imgs/projects/default.png" alt="dwitter-client" />
+            <div class="project__description">
+              <h3>Dwitter-Client</h3>
+              <span>트위터 클론 클라이언트 구현</span>
+              <span>React</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/YoonCode/feedback-app"
+            class="project"
+            target="blank"
+            data-type="frontend_project"
+          >
+            <img src="./imgs/projects/default.png" alt="feedback-app" />
+            <div class="project__description">
+              <h3>Feedback-App</h3>
+              <span>피드백 주고 받는 서비스 구현</span>
+              <span>React</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/YoonCode/Shoppy-React"
+            class="project"
+            target="blank"
+            data-type="frontend_project"
+          >
+            <img src="./imgs/projects/default.png" alt="shoppy" />
+            <div class="project__description">
+              <h3>Shoppy</h3>
+              <span>반응형 쇼핑몰 구현</span>
+              <span>React</span>
+            </div>
+          </a>
+
+          <!-- Mobile -->
+          <a
+            href="https://github.com/YoonCode/Weather-App-React-Native"
+            class="project"
+            target="blank"
+            data-type="mobile_project"
+          >
+            <img src="./imgs/projects/default-mobile.png" alt="weather-app" />
+            <div class="project__description">
+              <h3>Weather-App</h3>
+              <span>위치 기반 실시간 날씨 서비스 구현</span>
+              <span>React Native</span>
+            </div>
+          </a>
+
+          <!-- Backend -->
+          <a
+            href="https://github.com/YoonCode/Twitter-Clone-Server-NodeJS"
+            class="project"
+            target="blank"
+            data-type="backend_project"
+          >
+            <img src="./imgs/projects/default.png" alt="dwitter-server" />
+            <div class="project__description">
+              <h3>Dwitter-Server</h3>
+              <span>트위터 클론 서버 구현</span>
+              <span>ExpressJs</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/YoonCode/File-Organizer-NodeJs"
+            class="project"
+            target="blank"
+            data-type="backend_project"
+          >
+            <img src="./imgs/projects/default.png" alt="file-organizer" />
+            <div class="project__description">
+              <h3>File-Organizer</h3>
+              <span>사진 파일 자동 분류/저장 구현</span>
+              <span>NodeJs</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <div class="section__container">
+        <h1>Testimonials</h1>
+        <h3>See what they say about me</h3>
+        <div class="testimonials">
+          <div class="testimonial">
+            <img
+              src="https://media.licdn.com/dms/image/C4D03AQER4i5xk3FfwQ/profile-displayphoto-shrink_100_100/0/1516812353833?e=1681948800&v=beta&t=ATsqERflYwdaMiCDRFUWZtz0z5gu7H2dzirspDWYFtE"
+              alt="people"
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__speech-bubble">
+              <p>
+                Sangjin is an extremely talented front-end developer with a keen
+                eye for design and a deep understanding of web development
+                principles. He has consistently impressed me with his ability to
+                turn complex designs into beautiful, functional websites that
+                load quickly and run smoothly.
+              </p>
+              <p>
+                Sangjin is an excellent collaborator and communicator, always
+                willing to work with designers and other developers to ensure
+                that projects are completed on time and to the highest possible
+                standards. He is also a quick learner who is always seeking out
+                new technologies and techniques to improve his skills and
+                knowledge.
+              </p>
+              <p class="name">
+                <a href="https://www.linkedin.com/in/jeangeorges/"
+                  >Jean Georges</a
+                >
+                / Co-founder & CTO at TOOTI Inc.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__speech-bubble">
+              <p>
+                Sangjin has shown a strong ability to lead cross-functional
+                teams and collaborate with stakeholders to deliver high-quality
+                products that meet the company's goals and objectives. He
+                possess excellent communication skills, which enables him to
+                articulate his ideas and vision effectively to the team and
+                clients. His attention to detail and ability to prioritize work
+                has also led to the timely delivery of projects.
+              </p>
+              <p>
+                Furthermore, Sangjin has demonstrated an excellent ability to
+                understand customer needs and translate them into product
+                requirements. His data-driven approach to product management has
+                also enabled him to make informed decisions about product
+                features and roadmaps.
+              </p>
+              <p class="name">
+                <a href="https://www.linkedin.com/in/catherine-hong-4a8a9723/"
+                  >Catherine Hong</a
+                >
+                / Founder & CEO at TOOTI Inc.
+              </p>
+            </div>
+            <img
+              src="https://media.licdn.com/dms/image/C5603AQHOGdTBpaQagQ/profile-displayphoto-shrink_100_100/0/1599023434339?e=1682553600&v=beta&t=wlE8AGnQgNAW6RYPXYDwWQrB-kzkroLo8fgRyUjbaHQ"
+              alt="people"
+              class="testimonial__avatar"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">
+        <a href="mailto:yooncode.dev@gmail.com">yooncode.dev@gmail.com</a>
+      </h2>
+      <div class="contact__links">
+        <a href="https://github.com/YoonCode"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sangjin-yoon/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+      <p class="contact__rights">2023 YoonCode - All rights reserved</p>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
